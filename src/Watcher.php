@@ -76,7 +76,7 @@ class Watcher
                     $this->restart(false);
                 }
             } else {
-                $command = sprintf('%s %s/vendor/hyperf/watcher/collector-reload.php %s', $this->option->getBin(), BASE_PATH, $file);
+                $command = sprintf('%s %s/vendor/devitools/hyperf-watcher/collector-reload.php %s', $this->option->getBin(), BASE_PATH, $file);
                 $ret = exec($command);
                 $code = $ret['code'] ?? null;
                 if ($code === 0) {
