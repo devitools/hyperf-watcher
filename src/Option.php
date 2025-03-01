@@ -20,7 +20,7 @@ class Option
 
     protected string $bin = PHP_BINARY;
 
-    protected string $command = 'vendor/hyperf/watcher/watcher.php start';
+    protected string $command = 'vendor/devitools/hyperf-watcher/watcher.php start';
 
     /**
      * @var string[]
